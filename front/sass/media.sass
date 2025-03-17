@@ -441,7 +441,7 @@
         transform: scale(0.55)
         right: 150px
 
-@media screen and (max-width: 1300px) and (min-height: 1000px)
+@media screen and (max-width: 1302px) and (min-height: 1000px)
   .bonus
     &__main
       &-image
@@ -452,6 +452,12 @@
         right: 270px
       &-txt
         transform: scale(0.65)
+
+@media screen and (max-width: 1280px) and (max-height: 853px)
+  .bonus
+    &__main
+      &-wrapper
+        right: 240px
 
 @media screen and (max-width: 1210px) and (max-height: 590px)
   .bonus
@@ -566,7 +572,7 @@
         right: 457px
         transform: scale(0.5)
 
-@media screen and (max-width: 1060px) and (max-height: 760px)
+@media screen and (max-width: 1080px) and (max-height: 760px)
   .bonus
     &__main
       &-txt
@@ -632,7 +638,7 @@
 
 /************************************TABLET************************************/
 
-@media screen and (max-width: 1030px) and (orientation: portrait)
+@media screen and (max-width: 1300px) and (orientation: portrait)
   .play-btn
     bottom: -22px
   .bonus
@@ -694,7 +700,7 @@
       &-logo
         width: 330px
 
-@media screen and (max-width: 1030px) and (orientation: portrait) and (min-height: 1300px)
+@media screen and (max-width: 1032px) and (orientation: portrait) and (min-height: 1300px)
   .bonus
     &__main
       &-wrapper
@@ -1271,7 +1277,7 @@
 
 /************************************LANDSCAPE************************************/
 
-@media screen and (max-width: 920px) and (max-height: 450px) and (orientation: landscape)
+@media screen and (max-width: 950px) and (max-height: 450px) and (orientation: landscape)
   .bonus
     &__firstWin,
     &__secondWin
@@ -1283,6 +1289,7 @@
       &-info
         transform: scale(0.4)
         margin-top: 126px
+        padding-top: 100px
     &__secondWin
       &-bubble
         left: 0
@@ -1541,4 +1548,50 @@
       &-wrapper
         transform: translateX(50%) scale(0.25)
         bottom: 100px
+
+/************************************ Fold ************************************/
+@media screen and (max-width: 829px) and (min-width: 823px) and (max-height: 690px)
+  .bonus
+    &__main
+      &-image
+        left: 43%
+      &-wrapper
+        right: 526px
+
+@media screen and (max-width: 728px) and (min-width: 691px) and (max-height: 708px) and (min-height: 540px)
+  .bonus
+    &__main
+      &-image
+        left: 47%
+      &-wrapper
+        right: 666px
+        transform: scale(0.39)
+    &__footer
+      &-text
+        font-size: 9px
+        line-height: 15px
+
+@media screen and (width: 690px) and (max-height: 829px) and (min-height: 800px)
+  .bonus
+    &__main
+      &-image
+        left: 125px
+      &-wrapper
+        transform: scale(0.5)
+        bottom: 35px
+
+@media screen and (max-width: 655px) and (min-width: 649px) and (max-height: 708px) and (min-height: 649px)
+  .bonus
+    &__main
+      &-wrapper
+        transform: scale(0.4)
+        bottom: -5px
+      &-image
+        top: 220px
+        left: 135px
+      &-bubble
+        top: -51px
+
+
+
 
