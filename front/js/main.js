@@ -371,34 +371,6 @@ cols.forEach(item => {
     });
 })();
 
-//test
-document.querySelector('.secondRot-btn').addEventListener('click', () => {
-    testToggleFunction();
-});
-
-let isTestActive = false;
-
-function testToggleFunction() {
-    if (isTestActive) {
-        resetTestState();
-    } else {
-        doAfterSecondRotationTest();
-    }
-    isTestActive = !isTestActive;
-}
-
-function doAfterSecondRotationTest() {
-    displayPopup(popupSecond);
-    wrapper.style.pointerEvents = 'auto';
-}
-
-function resetTestState() {
-    overlay.classList.add('opacity-overlay');
-    popupSecond.classList.add('hide');
-    wrapper.style.pointerEvents = '';
-}
-
-
 cols.forEach(item => {
     const ua = navigator.userAgent;
     const isFirefox = /Firefox/i.test(ua);
