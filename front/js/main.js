@@ -399,4 +399,15 @@ function resetTestState() {
 }
 
 
+cols.forEach(item => {
+    const ua = navigator.userAgent;
+    const isFirefox = /Firefox/i.test(ua);
 
+    if (isFirefox) {
+        // Код для Mozilla Firefox
+        item.classList.add('_firefox');
+    } else {
+        // Код для остальных браузеров
+        item.classList.remove('_firefox');
+    }
+});
