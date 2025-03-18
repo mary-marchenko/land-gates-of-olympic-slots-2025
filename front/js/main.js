@@ -305,32 +305,15 @@ function displayPopup(popup) {
     popup.classList.remove('hide')
 }
 
-// cols.forEach(item => {
-//     if (/iPhone|iPad|iPod/i.test(navigator.userAgent)) {
-//         // код для мобильных устройств
-//         item.classList.add('_ios')
-//     } else {
-//         // код для обычных устройств
-//         item.classList.remove('_ios')
-//     }
-// });
-
 cols.forEach(item => {
-    const ua = navigator.userAgent;
-    const isIpad = /iPad/i.test(ua) || (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
-    const isIos = /iPhone|iPod/i.test(ua) || isIpad;
-
-    if (isIos) {
-        // код для iOS пристроїв
-        item.classList.add('_ios');
+    if (/iPhone|iPad|iPod/i.test(navigator.userAgent)) {
+        // код для мобильных устройств
+        item.classList.add('_ios')
     } else {
-        // код для інших пристроїв
-        item.classList.remove('_ios');
+        // код для обычных устройств
+        item.classList.remove('_ios')
     }
 });
-
-
-
 
 
 (function () {

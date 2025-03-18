@@ -899,10 +899,7 @@ body
   top: -3600px
   z-index: 9
   &._ios
-    @media screen and (max-width: 600px) and (orientation: portrait)
-      top: -3630px
-    @media screen and (max-width: 950px) and (orientation: landscape) and (max-height: 500px)
-      top: -3630px
+    top: -3630px
 
 .slots
   &.spinning
@@ -925,10 +922,7 @@ body
     .col
       animation: scroll 3s cubic-bezier(.5,0,.5,1) 1
       &._ios
-        @media screen and (max-width: 600px) and (orientation: portrait)
-          animation: scroll-mob 3s cubic-bezier(.5,0,.5,1) 1
-        @media screen and (max-width: 950px) and (orientation: landscape) and (max-height: 500px)
-          animation: scroll-mob 3s cubic-bezier(.5,0,.5,1) 1
+        animation: scroll-mob 3s cubic-bezier(.5,0,.5,1) 1
 
 
 @keyframes scroll
